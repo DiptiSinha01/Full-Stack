@@ -18,7 +18,7 @@ The project contains a professional AI/ML portfolio dashboard that is dynamicall
 ---
 
 ## 🏗️ Project Structure
-
+```bash
 Experiment-5
 └── lazy_loading
 ├── public
@@ -33,7 +33,7 @@ Experiment-5
 ├── index.html
 ├── package.json
 └── eslint.config.js
-
+```
 
 ---
 
@@ -57,11 +57,11 @@ const Dashboard = React.lazy(() => import("./Component/dashboard"));
 
 
 ### Step 2 – Wrap with Suspense
-
+```
 <Suspense fallback={<h2>Loading Dashboard...</h2>}>
 <Dashboard />
 </Suspense>
-
+```
 
 ### Step 3 – Dashboard Component
 
