@@ -137,9 +137,15 @@ export default App;
 ---
 
 ## 📸 Screenshots
+### Home Page
+<img width="1345" height="729" alt="image" src="https://github.com/user-attachments/assets/74f95373-0806-4803-9ed3-a505d8de3a92" />
+
+### About Page
+<img width="1038" height="635" alt="image" src="https://github.com/user-attachments/assets/1d7ae99a-dc5f-4c57-a6c8-95b4fbe16586" />
 
 ### 📞 Contact Page
-<img width="465" height="299" alt="image" src="https://github.com/user-attachments/assets/1db65c5d-6d55-45f3-a458-a175bc61d819" />
+<img width="1102" height="637" alt="image" src="https://github.com/user-attachments/assets/0f994fa8-83a9-4449-823e-392a6c1a6d0e" />
+
 
 
 
