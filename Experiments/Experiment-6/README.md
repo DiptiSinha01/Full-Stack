@@ -147,7 +147,7 @@ Both forms feature modern, professional UI designs with smooth animations and re
 
 #### Form Interface
 <div align="center">
-  <img src="./docs/screenshots/form-interface.png" alt="User Information Form" width="600" />
+  <img width="792" height="942" alt="image" src="https://github.com/user-attachments/assets/4ffe1e0f-6769-4f76-865e-e89f060aa3c2" />
   <p><em>User Information Form with all input field types</em></p>
 </div>
 
@@ -162,7 +162,7 @@ Both forms feature modern, professional UI designs with smooth animations and re
 
 #### Form Submission Result
 <div align="center">
-  <img src="./docs/screenshots/form-submission.png" alt="Form Submission Result" width="600" />
+  <img width="596" height="345" alt="image" src="https://github.com/user-attachments/assets/30d9c0a7-ba83-43f3-afe5-fc8d519f51be" />
   <p><em>Form data displayed in browser alert on successful submission</em></p>
 </div>
 
@@ -176,11 +176,11 @@ Both forms feature modern, professional UI designs with smooth animations and re
 
 ---
 
-### Enhanced Form Validation
+### Form Validation
 
 #### Validation Form Interface
 <div align="center">
-  <img src="./docs/screenshots/validation-interface.png" alt="Form Validation Interface" width="600" />
+  <img width="541" height="954" alt="image" src="https://github.com/user-attachments/assets/890b8783-fd2b-48cd-9c41-f939c791f118" />
   <p><em>Advanced validation form with real-time password strength indicator</em></p>
 </div>
 
@@ -204,7 +204,7 @@ Both forms feature modern, professional UI designs with smooth animations and re
 
 #### Validation Form Submission
 <div align="center">
-  <img src="./docs/screenshots/validation-submission.png" alt="Validation Submission Result" width="600" />
+  <img width="548" height="198" alt="image" src="https://github.com/user-attachments/assets/b71f0225-4512-4ef4-baca-23f368a58e38" />
   <p><em>Successful form submission with password strength confirmation</em></p>
 </div>
 
