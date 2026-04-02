@@ -57,7 +57,8 @@ Fetches a list of all students in the database.
 ]
 ```
 
-![GET All Students](./images/get-all-students.png)
+![GET All Students]![WhatsApp Image 2026-04-02 at 9 36 43 AM](https://github.com/user-attachments/assets/a4f5cb26-b0a6-4321-b9cb-4c31fc6bddb3)
+
 
 ---
 
@@ -78,7 +79,8 @@ Retrieves a single student record by their ID.
 }
 ```
 
-![GET Specific Student](./images/get-student-by-id.png)
+![GET Specific Student]![WhatsApp Image 2026-04-02 at 9 37 12 AM](https://github.com/user-attachments/assets/79259ecf-2c9e-40ea-aa77-944b6e5b0938)
+
 
 ---
 
@@ -105,7 +107,8 @@ Creates a new student record in the database.
 }
 ```
 
-![POST Create Student](./images/post-create-student.png)
+![POST Create Student]![WhatsApp Image 2026-04-02 at 10 02 00 AM](https://github.com/user-attachments/assets/f1bc4b05-0e6e-4fd2-bb03-2961f270199b)
+
 
 ---
 
@@ -134,7 +137,8 @@ Updates an existing student's information. Changes the student details for the g
 }
 ```
 
-![PUT Update Student](./images/put-update-student.png)
+![PUT Update Student]![WhatsApp Image 2026-04-02 at 9 57 48 AM](https://github.com/user-attachments/assets/c5a32be7-0d20-498d-9ebc-dd31a6f941d7)
+
 
 ---
 
@@ -156,7 +160,8 @@ Deletes a student record from the database.
 ]
 ```
 
-![DELETE Remove Student](./images/delete-student.png)
+![DELETE Remove Student]![WhatsApp Image 2026-04-02 at 9 58 28 AM](https://github.com/user-attachments/assets/f07ddf6c-b1ce-49a2-80a0-64a8187cfedf)
+
 
 ---
 
