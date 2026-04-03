@@ -85,6 +85,7 @@ User Input (Username + Password)
 ## 🚀 API Endpoints
 
 ### 1. User Registration
+
 **Endpoint:** `POST /register`  
 **Description:** Register a new user  
 **Request Body:**
@@ -104,7 +105,6 @@ User Input (Username + Password)
   "password": "$2a$12$2FBtvzzIqv0r9ku5l2Bx.KauLSyn3zKYq/Cj6n7xKK0Jpij.41QS"
 }
 ```
-
 ---
 
 ### 2. User Login
@@ -127,7 +127,6 @@ User Input (Username + Password)
   "password": "eyJhbGciOiJJUzI1NiJ9.eyJzdWIiOiJEaXB0aSIsImlhdCI6MTY3NDY0Cjc1MTY5NTxk3mE5MTk3Myw1ZXhwIjoxNzc1MTJMjk1OTczfQ.Q8pPRDbr144CvqXsbSjqK0AyR1DcKMTvozc0IdeL80k"
 }
 ```
-
 ---
 
 ### 3. Get Students (Protected Endpoint)
@@ -151,7 +150,6 @@ User Input (Username + Password)
   }
 ]
 ```
-
 ---
 
 ## 🛠️ Technologies Used
@@ -190,19 +188,22 @@ logging.level.org.hibernate=ERROR
 ## 📸 API Testing Screenshots
 
 ### Screenshot 1: User Registration
-![User Registration - POST /register](https://imgur.com/placeholder1.png)
+![WhatsApp Image 2026-04-03 at 10 22 36 AM](https://github.com/user-attachments/assets/4f30d585-5824-4cf3-82d0-545e0ba8a76d)
+
 - Creates a new user account with encrypted password
 - Password is hashed using BCrypt
 - Returns user details with encrypted password
 
 ### Screenshot 2: User Login
-![User Login - POST /login](https://imgur.com/placeholder2.png)
+![WhatsApp Image 2026-04-03 at 10 23 15 AM](https://github.com/user-attachments/assets/915310f8-d625-4d6f-93f7-7d3a1a86b40d)
+
 - Authenticates user credentials
 - Generates and returns JWT token
 - Token can be used for subsequent API calls
 
 ### Screenshot 3: Protected Endpoint with JWT
-![Get Students - GET /students with Bearer Token](https://imgur.com/placeholder3.png)
+![WhatsApp Image 2026-04-03 at 10 24 23 AM](https://github.com/user-attachments/assets/6c4b9afc-d8bb-4d9b-91ff-ea3402852d1e)
+
 - Requires valid JWT token in Authorization header
 - Token is validated by JwtFilter
 - Returns protected resource data
@@ -245,6 +246,9 @@ MDAwfQ.8Z-2qnLwQ4gJ8xJ9kL2pZ-xL          [Signature]
 ---
 
 ## 🚀 Running the Application
+![WhatsApp Image 2026-04-03 at 10 25 32 AM](https://github.com/user-attachments/assets/85fb144f-747e-4a69-9abf-21e60867186f)
+
+
 
 ### Prerequisites
 - Java 21 or higher
