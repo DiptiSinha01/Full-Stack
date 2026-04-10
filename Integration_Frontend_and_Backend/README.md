@@ -44,7 +44,9 @@ The Student Management System is a web application that allows users to manage s
 
 The user interface provides a form to add new student records. Enter the student ID, name, and course information, then click "Add Student".
 
-![Add Student Form](./images/add-student-form.png)
+<img width="1071" height="431" alt="image" src="https://github.com/user-attachments/assets/31343305-4964-41ad-8e92-b7324b02c2f4" />
+
+
 *Student Management System - Add Student Form with input fields*
 
 ---
@@ -57,7 +59,12 @@ The Student List section displays all students in a card-based layout. Each stud
 - Course enrolled in
 - Action buttons (Edit/Delete)
 
-![Student List View](./images/student-list.png)
+![WhatsApp Image 2026-04-10 at 11 56 47 AM](https://github.com/user-attachments/assets/a5584060-29cf-42bb-999d-f9c68d4c21fa)
+
+
+
+
+
 *Student Management System - Student List showing all enrolled students with their details*
 
 ---
@@ -66,7 +73,9 @@ The Student List section displays all students in a card-based layout. Each stud
 
 Click the "Edit" button on any student card to modify their information. The edit form pre-populates with current data, allowing users to update the student's details.
 
-![Edit Student Form](./images/edit-student.png)
+![WhatsApp Image 2026-04-10 at 12 19 38 PM](https://github.com/user-attachments/assets/71cafc5c-ffa1-4625-9eed-66beaf6b6a27)
+![WhatsApp Image 2026-04-10 at 12 19 52 PM](https://github.com/user-attachments/assets/f3920541-805d-48ac-964b-fd2e1273cb35)
+
 *Edit Student Interface - Modify existing student information (ID, Name, Course)*
 
 ---
@@ -75,7 +84,8 @@ Click the "Edit" button on any student card to modify their information. The edi
 
 Each student card includes a "Delete" button for removing records. The delete operation removes the student from the database and updates the UI.
 
-![Delete Operation](./images/student-list-final.png)
+![WhatsApp Image 2026-04-10 at 12 18 17 PM](https://github.com/user-attachments/assets/ac33eaec-af2e-42bc-b4c8-3b8b423189f9)
+
 *Student List - Delete functionality available for each student record*
 
 ---
@@ -97,7 +107,8 @@ Tables:
 └── tbl_users
 ```
 
-![MySQL Database](./images/mysql-database.png)
+![WhatsApp Image 2026-04-10 at 12 00 54 PM](https://github.com/user-attachments/assets/e9c7728b-1047-41bc-9a31-019c17b0db44)
+
 *MySQL Database - Showing the new_spring database with student records and user table structure*
 
 **Sample Data Stored:**
@@ -120,7 +131,8 @@ Tables:
 
 The backend is a Spring Boot application running on **Tomcat server (Port 8081)** with MySQL database connection.
 
-![Spring Boot Startup Logs](./images/springboot-logs.png)
+![WhatsApp Image 2026-04-10 at 11 58 11 AM](https://github.com/user-attachments/assets/1110544d-4a79-4439-bfaf-4757172c7d2e)
+
 *Spring Boot Application - Starting RestSampleApplication on port 8081 with:*
 - *Java 21.0.7 runtime*
 - *Tomcat initialized on port 8081*
