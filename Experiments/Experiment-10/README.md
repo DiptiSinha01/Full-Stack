@@ -71,32 +71,38 @@ Experiment-10/
 ### Backend Running
 The Spring Boot backend server starts on `http://localhost:8080` and handles WebSocket connections.
 
-![Backend Console](image1.png)
+<img width="1506" height="542" alt="image" src="https://github.com/user-attachments/assets/e62894f5-4c9b-4bc9-b355-da52731f0596" />
+
 
 ### Frontend UI - Connected State
 Beautiful chat interface showing real-time messaging between multiple users with connection status indicator.
 
-![Frontend Chat UI](image2.png)
+<img width="1600" height="857" alt="WhatsApp Image 2026-04-17 at 12 31 44 PM" src="https://github.com/user-attachments/assets/50b45023-87ea-4acb-842e-0e4845947a5f" />
+
 
 ### Backend Configuration
 WebSocket configuration with STOMP endpoints and cross-origin support for React development.
 
-![WebSocket Config](image3.png)
+<img width="769" height="498" alt="image" src="https://github.com/user-attachments/assets/22533ded-d559-480e-a67f-996a7264425c" />
+
 
 ### Chat Controller
 Message handler that broadcasts messages to all connected clients.
 
-![Chat Controller](image4.png)
+<img width="765" height="388" alt="image" src="https://github.com/user-attachments/assets/647c8ee0-2e53-4c53-8213-c9f04b9a773d" />
+
 
 ### Message Model
 Simple data model for chat messages with sender and content fields.
 
-![Message Model](image5.png)
+<img width="562" height="393" alt="image" src="https://github.com/user-attachments/assets/009a1bdf-827e-439a-840f-277083561178" />
+
 
 ### Backend Logs
 Complete initialization logs showing successful WebSocket server startup.
 
-![Backend Logs](image6.png)
+<img width="1090" height="142" alt="image" src="https://github.com/user-attachments/assets/0f1cd2d3-c74a-485e-9faf-6369c2f10e5e" />
+
 
 ---
 
