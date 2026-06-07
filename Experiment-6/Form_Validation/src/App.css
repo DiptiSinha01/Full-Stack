@@ -1,0 +1,474 @@
+/* ========================================
+   GLOBAL STYLES
+   ======================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+}
+
+/* ========================================
+   WRAPPER & CARD LAYOUT
+   ======================================== */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card {
+  width: 100%;
+  max-width: 550px;
+  padding: 50px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.25),
+              0 0 1px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  animation: slideUp 0.5s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========================================
+   HEADING & SUBTITLE
+   ======================================== */
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #2d3748;
+  letter-spacing: -0.5px;
+}
+
+.card::before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  margin: 0 auto 20px;
+  border-radius: 2px;
+}
+
+/* ========================================
+   FORM STYLING
+   ======================================== */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-top: 24px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #2d3748;
+  font-size: 14px;
+  text-transform: capitalize;
+  letter-spacing: 0.3px;
+}
+
+label:first-of-type {
+  margin-top: 0;
+}
+
+/* ========================================
+   INPUT STYLING
+   ======================================== */
+.input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  padding: 14px 45px 14px 16px;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  background: #f8fafc;
+  color: #2d3748;
+  font-size: 15px;
+  font-weight: 500;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder,
+input[type="text"]::placeholder {
+  color: #cbd5e0;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus {
+  border-color: #667eea;
+  background: white;
+  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+}
+
+input[type="email"]:disabled,
+input[type="password"]:disabled {
+  background: #edf2f7;
+  color: #a0aec0;
+  cursor: not-allowed;
+  border-color: #cbd5e0;
+}
+
+.input-wrapper input {
+  padding-right: 45px;
+}
+
+/* ========================================
+   TOGGLE PASSWORD BUTTON
+   ======================================== */
+.toggle-btn {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 8px;
+  margin: -8px;
+  transition: all 0.2s ease;
+  opacity: 0.6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle-btn:hover {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.toggle-btn:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+/* ========================================
+   VALIDATION MESSAGES
+   ======================================== */
+.valid {
+  color: #22c55e;
+  font-size: 13px;
+  margin: 8px 0 0 0;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  animation: slideDown 0.3s ease;
+}
+
+.invalid {
+  color: #ef4444;
+  font-size: 13px;
+  margin: 8px 0 0 0;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========================================
+   PASSWORD STRENGTH INDICATOR
+   ======================================== */
+.strength-container {
+  margin-top: 12px;
+  margin-bottom: 0;
+  padding: 12px 0;
+}
+
+.strength-bar {
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+  background: #e2e8f0;
+  overflow: hidden;
+  margin-bottom: 10px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.strength-bar::after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 0;
+  border-radius: 4px;
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.strength-weak::after {
+  width: 25%;
+  background: linear-gradient(90deg, #ef4444, #f87171);
+}
+
+.strength-fair::after {
+  width: 50%;
+  background: linear-gradient(90deg, #f59e0b, #fbbf24);
+}
+
+.strength-good::after {
+  width: 75%;
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+}
+
+.strength-strong::after {
+  width: 100%;
+  background: linear-gradient(90deg, #10b981, #22c55e);
+}
+
+.strength-text {
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.strength-weak {
+  color: #ef4444;
+}
+
+.strength-fair {
+  color: #f59e0b;
+}
+
+.strength-good {
+  color: #3b82f6;
+}
+
+.strength-strong {
+  color: #10b981;
+}
+
+.strength-text::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+/* ========================================
+   PASSWORD REQUIREMENTS BOX
+   ======================================== */
+.password-box {
+  margin-top: 16px;
+  margin-bottom: 24px;
+  padding: 18px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.03), rgba(118, 75, 162, 0.03));
+  border: 1.5px solid #e2e8f0;
+  border-left: 4px solid #667eea;
+}
+
+.password-box .title {
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: #2d3748;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.password-box .title::before {
+  content: '🔒';
+  font-size: 16px;
+}
+
+.password-box p {
+  margin: 0;
+  padding: 8px 0;
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.password-box .valid {
+  color: #22c55e;
+  margin: 0;
+  animation: none;
+}
+
+.password-box .invalid {
+  color: #ef4444;
+  margin: 0;
+  animation: none;
+}
+
+/* ========================================
+   SUBMIT BUTTON
+   ======================================== */
+button[type="submit"] {
+  width: 100%;
+  margin-top: 32px;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  box-shadow: 0 12px 24px rgba(102, 126, 234, 0.35);
+  position: relative;
+  overflow: hidden;
+}
+
+button[type="submit"]::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+button[type="submit"]:hover:not(:disabled)::before {
+  left: 100%;
+}
+
+button[type="submit"]:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 32px rgba(102, 126, 234, 0.45);
+}
+
+button[type="submit"]:active:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 16px rgba(102, 126, 234, 0.35);
+}
+
+button[type="submit"]:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: linear-gradient(135deg, #cbd5e0 0%, #a0aec0 100%);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"].submit-enabled {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  box-shadow: 0 12px 24px rgba(16, 185, 129, 0.35);
+}
+
+button[type="submit"].submit-enabled:hover {
+  box-shadow: 0 16px 32px rgba(16, 185, 129, 0.45);
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+@media (max-width: 640px) {
+  .card {
+    padding: 30px 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+
+  label {
+    font-size: 13px;
+    margin-top: 18px;
+    margin-bottom: 8px;
+  }
+
+  input[type="email"],
+  input[type="password"],
+  input[type="text"] {
+    padding: 12px 40px 12px 14px;
+    font-size: 14px;
+  }
+
+  .toggle-btn {
+    right: 12px;
+    font-size: 16px;
+    padding: 6px;
+    margin: -6px;
+  }
+
+  .password-box {
+    padding: 14px;
+    margin-bottom: 18px;
+  }
+
+  .password-box p {
+    font-size: 12px;
+    padding: 6px 0;
+  }
+
+  button[type="submit"] {
+    margin-top: 24px;
+    padding: 13px 16px;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  .strength-text {
+    font-size: 11px;
+  }
+}
